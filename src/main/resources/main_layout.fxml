@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="org.controller.MainController"
+            fx:id="mainBorderPane">
+
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="File">
+                    <items>
+                        <MenuItem text="New..." onAction="#showNewItemDialog"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem text="Exit" onAction="#handleExit"/>
+                    </items>
+                </Menu>
+                <Menu text="Edit">
+                    <items>
+                        <MenuItem text="Test"/>
+                    </items>
+                </Menu>
+                <Menu text="Test">
+                    <items>
+                        <MenuItem text="Test"/>
+                    </items>
+                </Menu>
+            </MenuBar>
+
+            <ToolBar>
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Button onAction="#showNewItemDialog">
+                        <tooltip>
+                            <Tooltip text="Add a ToDo item">
+                                <font>
+                                    <Font name="Ubuntu" size="15"/>
+                                </font>
+                            </Tooltip>
+                        </tooltip>
+                        <graphic>
+                            <ImageView>
+                                <Image url="icons/new-file-icon.png"/>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+
+                    <ToggleButton fx:id="filter_ToggleButton" onAction="#handleFilterButton">
+                        <tooltip>
+                            <Tooltip text="Filter today's items">
+                                <font>
+                                    <Font name="Ubuntu" size="15"/>
+                                </font>
+                            </Tooltip>
+                        </tooltip>
+                        <graphic>
+                            <ImageView>
+                                <Image url="icons/today-icon.png"/>
+                            </ImageView>
+                        </graphic>
+                    </ToggleButton>
+                </HBox>
+            </ToolBar>
+        </VBox>
+
+    </top>
+
+    <left>
+        <ListView fx:id="toDoItems_ListView" onKeyPressed="#handleKeyPressed"/>
+    </left>
+
+    <center>
+        <VBox spacing="10" style="-fx-background-color: white">
+            <padding>
+                <Insets bottom="10"/>
+            </padding>
+            <TextArea fx:id="details_TextArea" VBox.vgrow="ALWAYS" wrapText="true">
+                <font>
+                    <Font name="Ubuntu" size="16"/>
+                </font>
+            </TextArea>
+            <HBox spacing="10">
+                <Label text="Deadline">
+                    <padding>
+                        <Insets left="10"/>
+                    </padding>
+                    <font>
+                        <Font name="Ubuntu bold" size="16"/>
+                    </font>
+                </Label>
+                <Label fx:id="deadline_Label">
+                    <font>
+                        <Font name="Ubuntu bold" size="16"/>
+                    </font>
+                </Label>
+            </HBox>
+        </VBox>
+
+    </center>
+
+    <bottom>
+
+    </bottom>
+
+</BorderPane>

@@ -1,0 +1,10 @@
+Buy cat food	Get 1 bag of cat food	2020-12-25
+Do homework	Do physics homework	2022-02-28
+Get ice cream	Get 1 box of ice cream	2020-04-29
+Run	Run 1 lap in the park	2020-06-02
+Buy salad	Buy some iceberg salad from MegaImage	2020-04-29
+Run 5K	Practice in order to have the necessary stamina to run for 5 kilometers without taking a break. This should be good :)	2020-06-17
+Picture with tomatoes	Take a picture everyday with the garden tomatoes	2020-04-28
+Vacation in Mauritius	You planned a vacation in Mauritius	2021-05-20
+Lokk at Alina's database	Take a look at Alina's database from her PhD thesis	2020-04-30
+Just for today	Test for today	2020-04-29

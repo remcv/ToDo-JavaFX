@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="org.controller.NewItemController">
+
+    <headerText>Please enter a new ToDo item</headerText>
+
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Short description" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="shortDescription_TextField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label text="Details" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextArea fx:id="details_TextArea" GridPane.columnIndex="1" GridPane.rowIndex="1" wrapText="true"/>
+            <Label text="Deadline" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <DatePicker fx:id="deadline_DatePicker" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        </GridPane>
+    </content>
+
+</DialogPane>
