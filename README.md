@@ -15,7 +15,8 @@ Simple JavaFX desktop app to manage your to-do list.
 - Gradle
 
 #### Screenshots
-
+![App screenshot - main page](/screenshots/screenshot_01.jpg)  
+![App screenshot - add item](/screenshots/screenshot_02.jpg)
 
 #### Info
 This app is inspired by a tutorial made by Tim Buchalcka.  
